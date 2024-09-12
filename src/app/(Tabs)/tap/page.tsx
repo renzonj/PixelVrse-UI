@@ -24,7 +24,7 @@ const Top = () => {
 
    return (
       <>
-         <header className='border-0 border-b border-gray-accent'>
+         <header className='border-0 border-b border-c1-neutral-light'>
             <div className='flex-row-between'>
                <h2>
                   Leaderboard
@@ -34,14 +34,14 @@ const Top = () => {
                </IconContainer>
             </div>
 
-            <h4 className='text-purple-primary uppercase mt-4 mb-3'>
+            <h4 className='text-c1-primary-base uppercase mt-4 mb-3'>
                Weekly Referrer
             </h4>
          </header>
 
          <div className='mt-3 mb-20 space-y-3'>
 
-            <div className='flex-col-center bg-purple-primary p-5 rounded-3xl gap-1'>
+            <div className='flex-col-center bg-c1-primary-base p-5 rounded-3xl gap-1'>
                <p className='rounded-full py-2 px-3 border border-white'>Available now</p>
                <h1> Trade Pixfi </h1>
             </div>

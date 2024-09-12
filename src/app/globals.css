@@ -26,29 +26,12 @@
   :root {
     --background: 0 0% 7%;
     --foreground: 0 0% 98%;
-    --card: 0 0% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 0 0% 3.9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 9%;
-    --secondary: 0 0% 14.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 14.9%;
-    --muted-foreground: 0 0% 63.9%;
-    --accent: 0 0% 14.9%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 14.9%;
-    --input: 0 0% 14.9%;
-    --ring: 0 0% 83.1%;
   }
 }
 
 @layer base {
   * {
-    @apply border-border font-sans;
+    @apply border-c1-neutral-light font-sans;
   }
   h1 {
     @apply text-2xl text-white uppercase max-[320px]:text-xl;
@@ -74,7 +57,7 @@
     @apply bg-background text-foreground;
   }
   .main-button {
-    @apply bg-purple-primary text-white py-4 rounded-2xl text-md font-semibold uppercase;
+    @apply bg-c1-primary-base text-white py-4 rounded-2xl text-md font-semibold uppercase;
   }
   .flex-center {
     @apply flex items-center justify-center;

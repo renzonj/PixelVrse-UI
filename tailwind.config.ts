@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+const themeConfig = require('./theme.config');
 
 const config: Config = {
     darkMode: ["class"],
@@ -9,78 +10,20 @@ const config: Config = {
   ],
   theme: {
   	extend: {
-  		backgroundImage: {
-  			'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+		  backgroundImage: {
+			  'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
   			'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))'
-  		},
-  		borderRadius: {
-  			lg: 'var(--radius)',
-  			md: 'calc(var(--radius) - 2px)',
-  			sm: 'calc(var(--radius) - 4px)'
-  		},
-  		colors: {
+		},
+		borderRadius: {
+			lg: 'var(--radius)',
+			md: 'calc(var(--radius) - 2px)',
+			sm: 'calc(var(--radius) - 4px)'
+		},
+		colors: {
+			c1: themeConfig.themes.theme1,
+			c2: themeConfig.themes.theme2,
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
-  			card: {
-  				DEFAULT: 'hsl(var(--card))',
-  				foreground: 'hsl(var(--card-foreground))'
-  			},
-  			popover: {
-  				DEFAULT: 'hsl(var(--popover))',
-  				foreground: 'hsl(var(--popover-foreground))'
-  			},
-  			primary: {
-  				DEFAULT: 'hsl(var(--primary))',
-  				foreground: 'hsl(var(--primary-foreground))'
-  			},
-  			secondary: {
-  				DEFAULT: 'hsl(var(--secondary))',
-  				foreground: 'hsl(var(--secondary-foreground))'
-  			},
-  			muted: {
-  				DEFAULT: 'hsl(var(--muted))',
-  				foreground: 'hsl(var(--muted-foreground))'
-  			},
-  			accent: {
-  				DEFAULT: 'hsl(var(--accent))',
-  				foreground: 'hsl(var(--accent-foreground))'
-  			},
-  			destructive: {
-  				DEFAULT: 'hsl(var(--destructive))',
-  				foreground: 'hsl(var(--destructive-foreground))'
-  			},
-  			border: 'hsl(var(--border))',
-  			input: 'hsl(var(--input))',
-  			ring: 'hsl(var(--ring))',
-  			chart: {
-  				'1': 'hsl(var(--chart-1))',
-  				'2': 'hsl(var(--chart-2))',
-  				'3': 'hsl(var(--chart-3))',
-  				'4': 'hsl(var(--chart-4))',
-  				'5': 'hsl(var(--chart-5))'
-  			},
-			purple: {
-				primary: '#ae62d4',
-				secondary: "#340f3c",
-				accent: '#22202c',
-			},
-			blue: {
-				primary: '#67d3f9',
-				accent: '#1e40af',
-			},
-			gray: {
-				primary: '#1d1d1f',
-				secondary: '#171717',
-				accent: '#2b2b2b',
-			},
-			gold: {
-				primary: '#fdd226',
-				secondary: '#ffb806'
-			},
-			green:
-			{
-				primary: '#9fe3a1'
-			},
   		},
 		fontSize: {
 			'3xs': '.5rem',
