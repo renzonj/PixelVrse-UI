@@ -24,21 +24,26 @@
 
 @layer base {
   :root {
-    --background: 0 0% 7%;
-    --foreground: 0 0% 98%;
+    /* for svg colors */
+    --color-background: theme('colors.background');
+    --color-foreground: theme('colors.foreground');
+    --color-primary: theme('colors.primary.DEFAULT');
+    --color-neutral-contrast: theme('colors.neutral.contrast');
+    --color-primary-shade: theme('colors.primary.shade');
+    --color-primary-contrast: theme('colors.primary.contrast');
   }
 }
 
 @layer base {
   * {
-    @apply border-c1-neutral-light font-sans;
+    @apply border-neutral-shade font-sans;
   }
   h1 {
-    @apply text-2xl text-white uppercase max-[320px]:text-xl;
+    @apply text-2xl uppercase max-[320px]:text-xl;
     @apply font-bold;
   }
   h2 {
-    @apply text-xl leading-7 text-white uppercase max-[320px]:text-lg;
+    @apply text-xl leading-7 uppercase max-[320px]:text-lg;
     @apply font-bold;
   }
   h3 {
@@ -57,7 +62,7 @@
     @apply bg-background text-foreground;
   }
   .main-button {
-    @apply bg-c1-primary-base text-white py-4 rounded-2xl text-md font-semibold uppercase;
+    @apply bg-primary text-background py-4 rounded-2xl text-md font-semibold uppercase;
   }
   .flex-center {
     @apply flex items-center justify-center;

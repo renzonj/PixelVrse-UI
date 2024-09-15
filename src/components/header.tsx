@@ -14,10 +14,10 @@ const Header = () => {
             </Avatar>
             <h4>Always...</h4>
             <div className='flex-col pl-2 h-fit -space-y-1'>
-               <p className='flex-row-center gap-1 font-semibold text-c1-secondary-base text-xs'>
+               <p className='flex-row-center gap-1 font-semibold text-secondary text-xs'>
                   <RiCopperDiamondFill /> 0
                </p>
-               <p className='flex-row-center gap-1 font-semibold text-c1-primary-base text-xs'>
+               <p className='flex-row-center gap-1 font-semibold text-primary text-xs'>
                   <TbDiamondFilled /> 0
                </p>
             </div>
@@ -35,7 +35,6 @@ const Header = () => {
             <IconContainer>
                <h4 className='-mt-2'>en</h4>
             </IconContainer>
-
          </div>
       </header>
    )
